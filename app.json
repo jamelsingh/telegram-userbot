@@ -1,1 +1,36 @@
+{
+  "name": "Telegram UserBot",
+  "description": "A simple Telethon-based UserBot with plugin support.",
+  "repository": "https://github.com/jamelsingh/telegram-userbot",
+  "keywords": ["telegram", "userbot", "telethon", "python"],
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID (from https://my.telegram.org/).",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Your Telegram API Hash (from https://my.telegram.org/).",
+      "value": ""
+    },
+    "SESSION": {
+      "description": "Session name (any string, e.g. userbot).",
+      "value": "userbot"
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram user ID (for owner commands).",
+      "value": "0"
+    },
+    "BOTLOG_CHATID": {
+      "description": "Telegram group/channel ID for logging (optional).",
+      "value": "0"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "heroku-22"
+}
 
